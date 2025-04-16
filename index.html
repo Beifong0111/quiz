@@ -60,8 +60,8 @@
     <div class="word" v-if="currentWord">
       {{ currentWord.cn }}
     </div>
-    <button v-if="currentWord" @click="nextWord">次へ</button>
     <button v-if="currentWord" @click="showAnswer = !showAnswer">正解を見る</button>
+    <button v-if="currentWord" @click="nextWord">次へ</button>
     <div class="answer" v-if="showAnswer">
       {{ currentWord.jp }}
     </div>
